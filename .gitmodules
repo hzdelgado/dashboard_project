@@ -1,0 +1,3 @@
+[submodule "graphql-service"]
+	path = graphql-service
+	url = https://github.com/hzdelgado/graphql-service
