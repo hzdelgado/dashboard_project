@@ -11,7 +11,8 @@ services:
       - "3000:3000"
     depends_on:
       - dashboard-service
-
+    env_file:
+      - ./dashboard-graphql/.env
   dashboard-service:
     image: dashboard-service
     container_name: dashboard-service
