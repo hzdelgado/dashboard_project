@@ -1,3 +1,6 @@
 [submodule "graphql-service"]
 	path = graphql-service
 	url = https://github.com/hzdelgado/graphql-service
+[submodule "dashboard-graphql"]
+	path = dashboard-graphql
+	url = https://github.com/hzdelgado/dashboard-graphql
