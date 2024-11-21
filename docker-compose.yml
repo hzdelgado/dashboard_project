@@ -2,6 +2,7 @@ version: '3'
 
 services:
   dashboard-app:
+    image: dashboard-app
     container_name: dashboard-app
     build:
       context: ./dashboard-graphql
@@ -12,9 +13,12 @@ services:
       - dashboard-service
 
   dashboard-service:
+    image: dashboard-service
     container_name: dashboard-service
     build:
       context: ./graphql-service
       dockerfile: Dockerfile
     ports:
       - "4000:4000"
+    env_file:
+      - ./graphql-service/.env
