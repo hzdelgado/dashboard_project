@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  dashboard-app:
+    container_name: dashboard-app
+    build:
+      context: ./dashboard-graphql
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - dashboard-service
+
+  dashboard-service:
+    container_name: dashboard-service
+    build:
+      context: ./graphql-service
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
