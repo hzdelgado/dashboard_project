@@ -71,7 +71,11 @@ JWT_SECRET_KEY=your_secret_key
 PORT=4000
 ```
 ### Despliegue Local
-
+#### Clonar repositorios
+```
+git submodule init
+git submodule update
+```
 #### Construir y ejecutar los servicios
 ```
 docker-compose up --build
