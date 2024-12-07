@@ -58,8 +58,12 @@ El sistema está compuesto por dos submódulos:
 ### Prerrequisitos
 - **Docker** y **Docker Compose** instalados en tu máquina.
 
+### Clonar repositorios
+```
+git submodule init
+git submodule update
+```
 ### Variables de Entorno
-
 #### Frontend (`dashboard-app/.env`)
 ```env
 NEXT_PUBLIC_GRAPHQL_API=http://localhost:4000/graphql
@@ -71,11 +75,6 @@ JWT_SECRET_KEY=your_secret_key
 PORT=4000
 ```
 ### Despliegue Local
-#### Clonar repositorios
-```
-git submodule init
-git submodule update
-```
 #### Construir y ejecutar los servicios
 ```
 docker-compose up --build
