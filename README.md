@@ -1,3 +1,5 @@
+⚠️ **Aviso:** Las ramas actualizadas son `master` en ambos proyectos.
+
 # CRM Dashboard Example
 
 ## Descripción
